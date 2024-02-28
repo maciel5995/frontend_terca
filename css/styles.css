@@ -1,0 +1,49 @@
+h4 {
+    color: blueviolet;
+}
+
+.minha-classe-1 {
+    color: red;
+    text-align: center;
+}
+
+#meu-id-1 {
+    text-align: justify;
+    color: blue;
+}
+
+.classe-hexa-1 {
+    color: #c38c15;
+}
+
+.classe-hexa-2 {
+    color: #2c910a;
+}
+
+.classe-rgb-1 {
+    color: rgb(255, 106, 0);
+}
+
+.classe-rgb-2 {
+    color: rgb(88, 10, 134);
+}
+
+.cor-background-1 {
+    background-color: #c38c15;
+}
+
+.cor-background-2 {
+    background-color: #7dc315;
+}
+
+.background-image {
+    background-image: url("../assets/mustang.jpg");
+    color: white;
+    width: 500px;
+    height: 500px;
+    padding: 30px;
+    text-align: justify;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
