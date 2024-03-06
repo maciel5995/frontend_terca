@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+    <style>
+        label, input {
+            display: block;
+        }
+        div {
+            margin-bottom: 20px;
+        }
+        .radio label,
+        .radio input {
+            display: inline-block;
+        }
+        .check label,
+        .check input {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="user">Nome:</label>
+            <input type="text" name="user" value="Rodrigo" disabled>
+        </div>
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" placeholder="Digite seu nome...">
+        </div>
+        <div>
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" placeholder="Digite sua cidade...">
+        </div>
+        <div>
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" placeholder="Digite sua CPF..." required>
+        </div>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" placeholder="Digite sua E-mail...">
+        </div>
+        <div>
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" placeholder="Informe sua idade...">
+        </div>
+        <div>
+            <label for="data">Data:</label>
+            <input type="date" name="data" placeholder="Escolha uma data.">
+        </div>
+        <div>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" placeholder="Digite sua senha.">
+        </div>
+
+        <div>
+            <label for="preferido">Selecione seu time favorito:</label>
+            <div class="radio">
+                <input type="radio" value="flamengo" name="preferido">
+                <label for="flamengo">Flamengo</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="sao_paulo" name="preferido">
+                <label for="sao_paulo">São Paulo</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="gremio" name="preferido">
+                <label for="gremio">Grêmio</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="disciplinas">Selecione as disciplinas</label>
+            <div class="check">
+                <input type="checkbox" value="frontend" name="disciplinas[]">
+                <label for="frontend">Front-end</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" value="backend" name="disciplinas[]">
+                <label for="backend">Back-end</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" value="banco_dados" name="disciplinas[]">
+                <label for="banco_dados">Bando de Dados</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="arquivo">Selecione um arquivo:</label>
+            <input type="file" name="arquivo">
+        </div>
+
+        <div>
+            <label for="arquivos">Selecione um ou mais arquivos:</label>
+            <input type="file" name="arquivos" multiple>
+        </div>
+
+
+        <div>
+            <input type="reset" value="Limpar"  style="display: inline-block;">
+            <input type="submit" value="Enviar" style="display: inline-block;">
+        </div>
+    </form>
+    
+</body>
+</html>
