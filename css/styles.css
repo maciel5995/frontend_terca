@@ -47,3 +47,164 @@ h4 {
     background-size: cover;
     opacity: 0.5;
 }
+
+h3 {
+    color: red;
+}
+
+@media screen and (max-width:200px) {
+    h3 {
+        color: blue;
+        font-size: 12px;
+    }
+}
+
+.card {
+    width: 100px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+
+@media screen and (max-width:300px) {
+    .card {
+       display: block;
+       border-color: #2c910a;
+    }
+}
+
+h5 {
+    color: blue;
+}
+
+@media screen and (min-width:400px) {
+    h5 {
+        color: red;
+        font-size: 20px;
+    }
+}
+
+.card-mobile {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 10px;
+    display: block;
+}
+
+@media screen and (min-width:400px) {
+    .card-mobile {
+       display: inline-block;
+       border-color: #2c910a;
+    }
+}
+
+#paisagem {
+    display: none;
+}
+
+@media screen and (orientation: landscape) {
+    #paisagem {
+        display: block;
+        color: red;
+    }
+
+    #retrato {
+        display: none;
+    }
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    width: 24.5%;
+    height: 50px;
+    border: 1px solid black;
+    /* background-color: #7dc315; */
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.positions {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gap {
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.elemento {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+#el_1 {
+    order: 2;
+}
+
+#el_2 {
+    order: 1;
+}
+
+.grow {
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grow_1 {
+    /* width: 100px; */
+    width: auto;
+    height: 100px;
+    border: 1px solid black;
+    flex-grow: 2;
+}
+
+#grow_2 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    /* flex-grow: 2; */
+}
+
+
+.flex-basis {
+    display: flex;
+}
+
+.element {
+    flex-basis: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.maior {
+    flex-grow: 1;
+}

@@ -98,6 +98,55 @@
             <input type="file" name="arquivos" multiple>
         </div>
 
+        <div>
+            <label>Selecione um Estado</label>
+            <select>
+                <option>SC</option>
+                <option>RS</option>
+                <option>PR</option>
+                <option>SP</option>
+                <option>RJ</option>
+                <!-- <option selected>RJ</option> -->
+            </select>
+        </div>
+        <div>
+            <label>Selecione um Estado</label>
+            <select multiple>
+                <option>SC</option>
+                <option>RS</option>
+                <option>PR</option>
+                <option>SP</option>
+                <option>RJ</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Deixe seu comentário:</label>
+            <textarea></textarea>
+            <!-- <textarea cols="30" rows="10"></textarea> -->
+        </div>
+        <div>
+            <fieldset>
+                <legend>Informe seu nome completo</legend>
+                <Label>Nome</Label>
+                <input type="text">
+                <Label>Sobrenome</Label>
+                <input type="text">
+            </fieldset>          
+        </div>
+
+        <div>
+            <label>Informe sua cidade:</label>
+            <input type="text" list="cidades">
+
+            <datalist id="cidades">
+                <option value="Criciúma"></option>
+                <option value="Urussanga"></option>
+                <option value="Içara"></option>
+                <option value="Forquilhinha"></option>
+            </datalist>
+        </div>
+
 
         <div>
             <input type="reset" value="Limpar"  style="display: inline-block;">
